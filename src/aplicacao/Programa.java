@@ -19,6 +19,7 @@ public class Programa {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		sc.close();
 		
 	}
 
