@@ -6,19 +6,17 @@ import java.util.List;
 
 import entidades.enums.OrdemStatus;
 
-public class Ordem 
-{
+public class Ordem {
 	private Date momento;
 	private OrdemStatus status;
-	
-	
+
 	private Cliente cliente;
 	List<OrdemItem> ordemItens = new ArrayList<>();
-	
-	public Ordem() {}
 
-	public Ordem(Date momento, OrdemStatus status, Cliente cliente) 
-	{
+	public Ordem() {
+	}
+
+	public Ordem(Date momento, OrdemStatus status, Cliente cliente) {
 		this.momento = momento;
 		this.status = status;
 		this.cliente = cliente;
@@ -51,18 +49,13 @@ public class Ordem
 	public List<OrdemItem> getOrdemItem() {
 		return ordemItens;
 	}
-	
-	public void addItem(OrdemItem ordemItem) 
-	{
-		ordemItens.add(ordemItem);	
+
+	public void addItem(OrdemItem ordemItem) {
+		ordemItens.add(ordemItem);
 	}
-	
-	public void removeItem(OrdemItem ordemItem) 
-	{
+
+	public void removeItem(OrdemItem ordemItem) {
 		ordemItens.remove(ordemItem);
 	}
 
-	
-	
-	
 }

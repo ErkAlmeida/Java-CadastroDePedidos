@@ -1,22 +1,18 @@
 package entidades;
 
-public class OrdemItem 
-{
+public class OrdemItem {
 	private Integer quantidade;
 	private Double preco;
-		
-	
-	public OrdemItem() 
-	{
+
+	public OrdemItem() {
 
 	}
-	
+
 	public OrdemItem(Integer quantidade, Double preco) {
-	
+
 		this.quantidade = quantidade;
 		this.preco = preco;
 	}
-
 
 	public Integer getQuantidade() {
 		return quantidade;
@@ -33,11 +29,9 @@ public class OrdemItem
 	public void setPreco(Double preco) {
 		this.preco = preco;
 	}
-	
 
-	public Double subTotal(Integer quantidade, Double preco)
-	{
+	public Double subTotal(Integer quantidade, Double preco) {
 		return quantidade * preco;
 	}
-	
+
 }

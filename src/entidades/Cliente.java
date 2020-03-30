@@ -7,14 +7,12 @@ public class Cliente {
 	private String nome;
 	private String email;
 	private Date nascData;
-	
-	public Cliente() 
-	{
-		
+
+	public Cliente() {
+
 	}
 
-	public Cliente(String nome, String email, Date nascData) 
-	{
+	public Cliente(String nome, String email, Date nascData) {
 		this.nome = nome;
 		this.email = email;
 		this.nascData = nascData;
@@ -43,9 +41,5 @@ public class Cliente {
 	public void setNascData(Date nascData) {
 		this.nascData = nascData;
 	}
-	
-	
-	
-	
-	
+
 }
