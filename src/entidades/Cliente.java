@@ -42,5 +42,4 @@ public class Cliente
 	public void setNascData(Date nascData) {
 		this.nascData = nascData;
 	}
-
 }

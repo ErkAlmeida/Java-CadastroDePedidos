@@ -41,7 +41,7 @@ public class Programa {
 		String email = sc.nextLine();
 		
 				
-		System.out.print("Data nascimento: (DD/MM/YYYY)");
+		System.out.print("Data nascimento (DD/MM/YYYY): ");
 		Date dataNascimento = sdf.parse(sc.next());
 		
 		//Consumindo quebra de linha
@@ -60,9 +60,7 @@ public class Programa {
 		
 		System.out.print("Quantidade:");
 		int quantidadeItens = sc.nextInt();
-		
-	
-		
+				
 		for(int w = 0; w < quantidadeItens; w++)
 		{
 			//Consumindo quebra de linha
@@ -82,6 +80,8 @@ public class Programa {
 			ordem.addItem(new OrdemItem(quantidadeProduto, precoProduto, new Produto(nomeProduto, precoProduto)));
 		}
 			
+		System.out.println(ordem.toString());
+		
 		sc.close();
 		
 	}
