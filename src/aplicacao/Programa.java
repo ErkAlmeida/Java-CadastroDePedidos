@@ -31,7 +31,7 @@ public class Programa {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
 		
-		sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
+		//sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
 		
 		System.out.println("Entre com Dados do Cliente#");
 		System.out.print("Nome: ");
@@ -52,9 +52,8 @@ public class Programa {
 		System.out.print("Status (PAGAMENTO_PENDENDETE, PROCESSANDO, ENVIADO, ENTREGUE): ");
 		String status = sc.nextLine();
 		
-		Date momento = new Date();
 		
-		Ordem ordem = new Ordem(momento, OrdemStatus.valueOf(status), new Cliente(nome, email, dataNascimento));
+		Ordem ordem = new Ordem(new Date(), OrdemStatus.valueOf(status), new Cliente(nome, email, dataNascimento));
 		
 		System.out.println("Digite a quantidade de Itens para o pedido");
 		
