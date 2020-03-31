@@ -1,20 +1,21 @@
 package entidades;
 
-public class Produto {
+public class Produto 
+{
 	private String nome;
 	private Double preco;
 
-	private OrdemItem orderItem;
+	//private OrdemItem orderItem;
 
 	public Produto() {
 
 	}
 
-	public Produto(String nome, Double preco, OrdemItem orderItem) {
+	public Produto(String nome, Double preco) {
 
 		this.nome = nome;
 		this.preco = preco;
-		this.orderItem = orderItem;
+		//this.orderItem = orderItem;
 	}
 
 	public String getNome() {
@@ -33,12 +34,12 @@ public class Produto {
 		this.preco = preco;
 	}
 
-	public OrdemItem getOrderItem() {
+	/*public OrdemItem getOrderItem() {
 		return orderItem;
 	}
 
 	public void setOrderItem(OrdemItem orderItem) {
 		this.orderItem = orderItem;
-	}
+	}*/
 
 }

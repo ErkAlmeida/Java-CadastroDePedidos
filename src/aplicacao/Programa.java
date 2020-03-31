@@ -68,7 +68,7 @@ public class Programa {
 			//Consumindo quebra de linha
 			sc.nextLine();
 			
-			System.out.println("Digite o item #N "+ w + 1);
+			System.out.println("Digite o item #N "+ (w + 1));
 			
 			System.out.print("Nome do produto: ");
 			String nomeProduto = sc.nextLine();
@@ -79,13 +79,9 @@ public class Programa {
 			System.out.print("Quantidade: ");
 			int quantidadeProduto = sc.nextInt();
 			
-
-			Produto produtos = new Produto (nomeProduto, precoProduto, new OrdemItem(quantidadeProduto, precoProduto));
+			ordem.addItem(new OrdemItem(quantidadeProduto, precoProduto, new Produto(nomeProduto, precoProduto)));
 		}
-		
-		
-		
-		
+			
 		sc.close();
 		
 	}

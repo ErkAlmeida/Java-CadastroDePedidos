@@ -6,11 +6,13 @@ import java.util.List;
 
 import entidades.enums.OrdemStatus;
 
-public class Ordem {
+public class Ordem 
+{
 	private Date momento;
 	private OrdemStatus status;
 
 	private Cliente cliente;
+	
 	List<OrdemItem> ordemItens = new ArrayList<>();
 
 	public Ordem() {
